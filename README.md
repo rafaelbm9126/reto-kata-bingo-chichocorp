@@ -1,8 +1,7 @@
 # Reto Kata Bingo for ChichoCorp
 
-Este es un reto planteado para ser un software simulador para un juego de bingo, con las reglas dadas.
-Simula la partida mono-jugador, donde se puede obtener una tarjeta de 5x5 numerada en cada casilla, 
-genera un numero aleatorio el cual se maneja por el rango dado y ofrece la validación necesaria para determinar si con la tarjeta y su serie de números resulta ganador.
+Este es un reto planteado para ser un software simulador para un juego de bingo, con las 
+**[Reglas](http://www.tddbuddy.com/katas/Bingo%20Kata.pdf "Reglas")** dadas. Simula la partida mono-jugador, donde se puede obtener una tarjeta de 5x5 numerada en cada casilla, genera un numero aleatorio el cual se maneja por el rango dado y ofrece la validación necesaria para determinar si con la tarjeta y su serie de números resulta ganador.
 
 <br>
 
