@@ -1,0 +1,28 @@
+{
+  "name": "reto-bingo-chicho",
+  "version": "0.0.1",
+  "description": "reato kata bingo en javascript",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com"
+  },
+  "keywords": [
+    "javascript",
+    "node",
+    "backend",
+    "frontend",
+    "jest",
+    "unit",
+    "test"
+  ],
+  "author": "Rafael Briceño <rafaelbm9126@gmail.com>",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
