@@ -1,1 +1,1 @@
-web: sh -c 'cd ./app/ && npm start'
+web: npm start
