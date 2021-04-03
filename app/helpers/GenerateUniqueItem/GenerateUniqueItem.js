@@ -5,7 +5,7 @@ const shuffle_array = (array) => {
 const GenerateUniqueItem = (
     arrayReference,
     minBound,
-    maxBound,
+    maxBound
 ) => {
     let array = [];
     let i = 0;
@@ -18,6 +18,7 @@ const GenerateUniqueItem = (
             return array[i];
         }
         i++;
+    // eslint-disable-next-line no-constant-condition
     } while(true);
 }
 

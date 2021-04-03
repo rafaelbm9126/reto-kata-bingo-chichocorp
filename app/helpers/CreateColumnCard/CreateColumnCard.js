@@ -1,7 +1,7 @@
 const CreateColumnCard = (
     minBound,
     maxBound,
-    maxLengPerColumn = 5,
+    maxLengPerColumn = 5
 ) => {
     let column = [];
 

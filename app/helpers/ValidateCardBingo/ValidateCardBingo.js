@@ -1,8 +1,11 @@
 const ValidateCardBingo = (
     gameStateAct,
-    cardBingo,
+    cardBingo
 ) => {
     let isntWin = [];
+    if (gameStateAct.length < 25) {
+        return false;
+    }
     const keysCard = Object.keys(cardBingo);
     keysCard.map((item_key, index_key) => {
         const column = cardBingo[item_key];

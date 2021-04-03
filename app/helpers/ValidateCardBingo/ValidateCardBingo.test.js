@@ -18,6 +18,6 @@ const cardBingo = {
 test('vadidate if win', () => {
     expect(ValidateCardBingo(
         gameStateAct,
-        cardBingo,
+        cardBingo
     )).toBe(true);
 });

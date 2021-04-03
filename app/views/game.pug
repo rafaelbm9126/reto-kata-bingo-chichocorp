@@ -1,0 +1,108 @@
+doctype html
+html(lang="en")
+    head
+        meta(charset="UTF-8")
+        meta(http-equiv="X-UA-Compatible", content="IE=edge")
+        meta(name="viewport", content="width=device-width, initial-scale=1.0")
+        title Reto Kata Bingo
+        style(type="text/css").
+            .wrapper {
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+            table, td, th {
+                border: 1px solid black;
+                padding: 10px;
+            }
+            td, th {
+                min-width: 30px;
+                text-align: center;
+            }
+            table {
+                width: auto;
+                border-collapse: collapse;
+            }
+            .free {
+                color: #fb430a;
+                font-weight: bold;
+            }
+            .btns {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+            }
+            button {
+                padding: 5px;
+                cursor: pointer;
+            }
+            .game {
+                width: 200px;
+                min-height: 200px;
+                border: 1px solid black;
+            }
+            .content-number {
+                text-align: center;
+            }
+            .number {
+                color: red;
+                font-size: 80px;
+            }
+            .cont {
+                display: block;
+                word-break: break-all;
+            }
+            .son {
+                margin: 5px 5px 0 5px;
+            }
+            .win-text {
+                margin: 20px;
+                text-align: center;
+                font-size: 100px;
+                color: red;
+            }
+
+    body 
+        div.wrapper
+            div
+                table
+                    thead 
+                        tr 
+                        th B
+                        th I
+                        th N
+                        th G
+                        th O
+                    tbody 
+                        - for (var i=0; i<5; ++i) {
+                            tr 
+                                td #{card['B'][i]}
+                                td #{card['I'][i]}
+                                if i !== 2
+                                    td #{card['N'][i]}
+                                else
+                                    td.free free
+                                td #{card['G'][i]}
+                                td #{card['O'][i]}
+                        - }
+            div.btns
+                a(href="/next_value") 
+                    button Next Value
+                br
+                br
+                a(href="/validate_winner") 
+                    button BINGOOOOO..!
+                br
+                br
+                a(href="/finish_game") 
+                    button finish the game
+            div.game
+                div.content-number 
+                    span.number #{gameStatus.length > 0 ? gameStatus[gameStatus.length - 1] : 0}
+                div.cont
+                    each val in gameStatus
+                        span.son= val                   
+        if isWinner === true
+            div.win-text
+                span Winner
